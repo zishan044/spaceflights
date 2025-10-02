@@ -19,3 +19,7 @@ preprocessed_companies:
 preprocessed_shuttles:
   type: pandas.ParquetDataset
   filepath: data/02_intermediate/preprocessed_shuttles.pq
+
+model_input_table:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/model_input_table.pq
