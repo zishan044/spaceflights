@@ -28,3 +28,6 @@ attr = "spaceflights.__version__"
 [tool.setuptools.packages.find]
 where = [ "src",]
 namespaces = false
+
+[tool.kedro_telemetry]
+project_id = "be3491897958448584e6df2652e82b47"
