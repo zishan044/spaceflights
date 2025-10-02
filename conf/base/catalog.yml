@@ -23,3 +23,13 @@ preprocessed_shuttles:
 model_input_table:
   type: pandas.ParquetDataset
   filepath: data/03_primary/model_input_table.pq
+
+active_modeling_pipeline.regressor:
+  type: pickle.PickleDataset
+  filepath: data/06_models/regressor_active.pkl
+  versioned: true
+
+candidate_modeling_pipeline.regressor:
+  type: pickle.PickleDataset
+  filepath: data/06_models/regressor_candidate.pkl
+  versioned: true
