@@ -1,13 +1,16 @@
 companies:
   type: pandas.CSVDataset
   filepath: s3://spaceflights/companies.csv
+  credentials: dev_s3
 
 reviews:
   type: pandas.CSVDataset
   filepath: s3://spaceflights/reviews.csv
+  credentials: dev_s3
 
 shuttles:
   type: pandas.ExcelDataset
   filepath: s3://spaceflights/shuttles.xlsx
+  credentials: dev_s3
   load_args:
     engine: openpyxl
